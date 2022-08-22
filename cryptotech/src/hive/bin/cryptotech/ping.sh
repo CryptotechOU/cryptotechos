@@ -33,7 +33,7 @@
 #######################################
 
 CONF=/hive-config/rig.conf
-PACKAGE=cryptotechos
+PACKAGE=cryptotech
 DATABASE="https://cryptotech-crm-default-rtdb.europe-west1.firebasedatabase.app"
 DIRECTORY="status/worker"
 

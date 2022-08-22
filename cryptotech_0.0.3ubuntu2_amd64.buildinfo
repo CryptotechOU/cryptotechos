@@ -2,19 +2,19 @@ Format: 1.0
 Source: cryptotech
 Binary: cryptotech
 Architecture: amd64 source
-Version: 0.0.2ubuntu2
+Version: 0.0.3ubuntu2
 Checksums-Md5:
- ab0b6aec3c1f6ffe99c9f6fa9c820f58 599 cryptotech_0.0.2ubuntu2.dsc
- 14444dc813208697b31bd5abfbd3e8e9 3598 cryptotech_0.0.2ubuntu2_amd64.deb
+ e043fd3b8d104a86856ac7504e6771a1 599 cryptotech_0.0.3ubuntu2.dsc
+ 0157e42d18acf08d33cd66081dedff7a 3626 cryptotech_0.0.3ubuntu2_amd64.deb
 Checksums-Sha1:
- 7eb9050f185852046e63b8620077a789ed2425b3 599 cryptotech_0.0.2ubuntu2.dsc
- 7b21e061bbda90a690a387b757729f6017eea8a4 3598 cryptotech_0.0.2ubuntu2_amd64.deb
+ 5025a88dcaedd85fe92703bb1a5bdfa77f52a749 599 cryptotech_0.0.3ubuntu2.dsc
+ 580dc5e4ddc4bbf5f2b5055511a2adec28250eaa 3626 cryptotech_0.0.3ubuntu2_amd64.deb
 Checksums-Sha256:
- fcb0f5c4748d928093a48670d2940a7c06d5430b8014b5d21f0df49c85149008 599 cryptotech_0.0.2ubuntu2.dsc
- 96278c6c187b92a7400cd97ec7d8e2863e9082779ca720e83f2634a03132058d 3598 cryptotech_0.0.2ubuntu2_amd64.deb
+ a155dc31d4216c4887bc1e3996dc2a51d4b447a445da5f409282420dea9f4ba9 599 cryptotech_0.0.3ubuntu2.dsc
+ caeb4c4f85b29f5d89e9d988e84455023e96f07cbb529461cbcb65aa3cb24028 3626 cryptotech_0.0.3ubuntu2_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Mon, 22 Aug 2022 16:25:30 +0300
+Build-Date: Mon, 22 Aug 2022 16:31:27 +0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
 Installed-Build-Depends:

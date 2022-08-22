@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui
 dpkg-buildpackage: info: source package cryptotech
-dpkg-buildpackage: info: source version 0.0.2ubuntu2
+dpkg-buildpackage: info: source version 0.0.3ubuntu2
 dpkg-buildpackage: info: source distribution UNRELEASED
 dpkg-buildpackage: info: source changed by sadava <sadava@zbook>
  dpkg-source --before-build .
@@ -12,8 +12,8 @@ dh clean
 dpkg-source: warning: Version number suggests Ubuntu changes, but Maintainer: does not have Ubuntu address
 dpkg-source: warning: Version number suggests Ubuntu changes, but there is no XSBC-Original-Maintainer field
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building cryptotech in cryptotech_0.0.2ubuntu2.tar.xz
-dpkg-source: info: building cryptotech in cryptotech_0.0.2ubuntu2.dsc
+dpkg-source: info: building cryptotech in cryptotech_0.0.3ubuntu2.tar.xz
+dpkg-source: info: building cryptotech in cryptotech_0.0.3ubuntu2.dsc
  debian/rules binary
 dh binary
    dh_update_autotools_config
@@ -40,16 +40,17 @@ dh binary
 dpkg-gencontrol: warning: Depends field of package cryptotech: substitution variable ${shlibs:Depends} used, but is not defined
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'cryptotech' in '../cryptotech_0.0.2ubuntu2_amd64.deb'.
- dpkg-genbuildinfo -O../cryptotech_0.0.2ubuntu2_amd64.buildinfo
- dpkg-genchanges -O../cryptotech_0.0.2ubuntu2_amd64.changes
+dpkg-deb: building package 'cryptotech' in '../cryptotech_0.0.3ubuntu2_amd64.deb'.
+ dpkg-genbuildinfo -O../cryptotech_0.0.3ubuntu2_amd64.buildinfo
+ dpkg-genchanges -O../cryptotech_0.0.3ubuntu2_amd64.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build .
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
-Now running lintian cryptotech_0.0.2ubuntu2_amd64.changes ...
+Now running lintian cryptotech_0.0.3ubuntu2_amd64.changes ...
 E: cryptotech changes: bogus-mail-host Changed-By sadava@zbook
-E: cryptotech: bogus-mail-host-in-debian-changelog sadava@zbook version 0.0.1ubuntu2 (line 7)
-E: cryptotech: bogus-mail-host-in-debian-changelog sadava@zbook version 0.0.2ubuntu2 (line 1)
+E: cryptotech: bogus-mail-host-in-debian-changelog sadava@zbook version 0.0.1ubuntu2 (line 13)
+E: cryptotech: bogus-mail-host-in-debian-changelog sadava@zbook version 0.0.2ubuntu2 (line 7)
+E: cryptotech: bogus-mail-host-in-debian-changelog sadava@zbook version 0.0.3ubuntu2 (line 1)
 E: cryptotech: copyright-contains-dh_make-todo-boilerplate
 E: cryptotech source: debian-rules-is-dh_make-template
 E: cryptotech: description-is-dh_make-template
