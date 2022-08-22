@@ -1,0 +1,16 @@
+Source: cryptotech
+Section: unknown
+Priority: optional
+Maintainer: sadava <info@cryptotech.ee>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/cryptotech
+#Vcs-Git: https://salsa.debian.org/debian/cryptotech.git
+Rules-Requires-Root: no
+
+Package: cryptotech
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

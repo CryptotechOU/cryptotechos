@@ -1,0 +1,86 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package cryptotech
+dpkg-buildpackage: info: source version 0.0.2ubuntu2
+dpkg-buildpackage: info: source distribution UNRELEASED
+dpkg-buildpackage: info: source changed by sadava <sadava@zbook>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ dpkg-source -b .
+dpkg-source: warning: Version number suggests Ubuntu changes, but Maintainer: does not have Ubuntu address
+dpkg-source: warning: Version number suggests Ubuntu changes, but there is no XSBC-Original-Maintainer field
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building cryptotech in cryptotech_0.0.2ubuntu2.tar.xz
+dpkg-source: info: building cryptotech in cryptotech_0.0.2ubuntu2.dsc
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/cryptotech/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installcron
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz -a
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package cryptotech: substitution variable ${shlibs:Depends} used, but is not defined
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'cryptotech' in '../cryptotech_0.0.2ubuntu2_amd64.deb'.
+ dpkg-genbuildinfo -O../cryptotech_0.0.2ubuntu2_amd64.buildinfo
+ dpkg-genchanges -O../cryptotech_0.0.2ubuntu2_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+Now running lintian cryptotech_0.0.2ubuntu2_amd64.changes ...
+E: cryptotech changes: bogus-mail-host Changed-By sadava@zbook
+E: cryptotech: bogus-mail-host-in-debian-changelog sadava@zbook version 0.0.1ubuntu2 (line 7)
+E: cryptotech: bogus-mail-host-in-debian-changelog sadava@zbook version 0.0.2ubuntu2 (line 1)
+E: cryptotech: copyright-contains-dh_make-todo-boilerplate
+E: cryptotech source: debian-rules-is-dh_make-template
+E: cryptotech: description-is-dh_make-template
+E: cryptotech: doc-base-file-references-missing-file cryptotech.cryptotech:10 /usr/share/doc/cryptotech/cryptotech.sgml.gz
+E: cryptotech: doc-base-file-references-missing-file cryptotech.cryptotech:13 /usr/share/doc/cryptotech/cryptotech.ps.gz
+E: cryptotech: doc-base-file-references-missing-file cryptotech.cryptotech:16 /usr/share/doc/cryptotech/cryptotech.text.gz
+E: cryptotech: doc-base-file-references-missing-file cryptotech.cryptotech:19 /usr/share/doc/cryptotech/html/index.html
+E: cryptotech: doc-base-file-references-missing-file cryptotech.cryptotech:20 /usr/share/doc/cryptotech/html/*.html
+E: cryptotech: helper-templates-in-copyright
+E: cryptotech: non-standard-toplevel-dir hive/
+E: cryptotech source: readme-source-is-dh_make-template
+E: cryptotech: section-is-dh_make-template
+W: cryptotech source: bad-homepage <insert the upstream URL, if relevant>
+W: cryptotech: bad-homepage <insert the upstream URL, if relevant>
+W: cryptotech: copyright-has-url-from-dh_make-boilerplate
+W: cryptotech source: dh-make-template-in-source [debian/cryptotech.cron.d.ex]
+W: cryptotech source: dh-make-template-in-source [debian/cryptotech.doc-base.ex]
+W: cryptotech source: dh-make-template-in-source [debian/manpage.1.ex]
+W: cryptotech source: dh-make-template-in-source [debian/manpage.md.ex]
+W: cryptotech source: dh-make-template-in-source [debian/manpage.sgml.ex]
+W: cryptotech source: dh-make-template-in-source [debian/manpage.xml.ex]
+W: cryptotech source: dh-make-template-in-source [debian/postinst.ex]
+W: cryptotech source: dh-make-template-in-source [debian/postrm.ex]
+W: cryptotech source: dh-make-template-in-source [debian/preinst.ex]
+W: cryptotech source: dh-make-template-in-source [debian/prerm.ex]
+W: cryptotech source: dh-make-template-in-source [debian/salsa-ci.yml.ex]
+W: cryptotech: doc-base-abstract-field-is-template cryptotech.cryptotech:6
+W: cryptotech: doc-base-unknown-section cryptotech.cryptotech:7 unknown
+W: cryptotech: file-in-unusual-dir hive/bin/cryptotech/ping.sh
+W: cryptotech: readme-debian-contains-debmake-template
+W: cryptotech: script-not-executable [hive/bin/cryptotech/ping.sh]
+W: cryptotech source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: cryptotech: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+Finished running lintian.

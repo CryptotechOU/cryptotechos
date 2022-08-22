@@ -1,0 +1,10 @@
+Package: cryptotech
+Version: 0.0.2ubuntu2
+Architecture: amd64
+Maintainer: sadava <info@cryptotech.ee>
+Installed-Size: 26
+Section: unknown
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

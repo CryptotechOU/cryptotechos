@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Mon, 22 Aug 2022 16:23:07 +0300
+Source: cryptotech
+Binary: cryptotech
+Built-For-Profiles: noudeb
+Architecture: source amd64
+Version: 0.0.2ubuntu2
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: sadava <info@cryptotech.ee>
+Changed-By: sadava <sadava@zbook>
+Description:
+ cryptotech - <insert up to 60 chars description>
+Changes:
+ cryptotech (0.0.2ubuntu2) UNRELEASED; urgency=medium
+ .
+   * New version.
+Checksums-Sha1:
+ 7eb9050f185852046e63b8620077a789ed2425b3 599 cryptotech_0.0.2ubuntu2.dsc
+ 4c176553bd6abc7d177b3cd1b93612f414950e8b 9284 cryptotech_0.0.2ubuntu2.tar.xz
+ 52cb57b49ec166bd00a4ceb6583812f079f8bac0 6003 cryptotech_0.0.2ubuntu2_amd64.buildinfo
+ 7b21e061bbda90a690a387b757729f6017eea8a4 3598 cryptotech_0.0.2ubuntu2_amd64.deb
+Checksums-Sha256:
+ fcb0f5c4748d928093a48670d2940a7c06d5430b8014b5d21f0df49c85149008 599 cryptotech_0.0.2ubuntu2.dsc
+ f9dbcb1e50a2127ce29f05789ca4bfbe5ce818cdd3aea193487cd75355e32894 9284 cryptotech_0.0.2ubuntu2.tar.xz
+ 66206e9044b65fb163148425abb6946a01732b2cd829bde2e077fc87d9e56977 6003 cryptotech_0.0.2ubuntu2_amd64.buildinfo
+ 96278c6c187b92a7400cd97ec7d8e2863e9082779ca720e83f2634a03132058d 3598 cryptotech_0.0.2ubuntu2_amd64.deb
+Files:
+ ab0b6aec3c1f6ffe99c9f6fa9c820f58 599 unknown optional cryptotech_0.0.2ubuntu2.dsc
+ cbaf86395eecf4c42085a60d876cadf5 9284 unknown optional cryptotech_0.0.2ubuntu2.tar.xz
+ 2ff7c25d661b96479b71111c819c51bd 6003 unknown optional cryptotech_0.0.2ubuntu2_amd64.buildinfo
+ 14444dc813208697b31bd5abfbd3e8e9 3598 unknown optional cryptotech_0.0.2ubuntu2_amd64.deb
